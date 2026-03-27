@@ -1,6 +1,6 @@
 # IOTMER Hardware
 
-[![License](https://img.shields.io/badge/License-CERN--OHL--S-2.0-lightgrey.svg)](LICENSE)
+[![License](https://img.shields.io/static/v1?label=License&message=CERN-OHL-S%20v2&color=lightgray)](LICENSE)
 [![Hardware](https://img.shields.io/badge/Hardware-In%20Development-yellow.svg)](#boards)
 
 IOTMER Hardware is the open-source repository for printed circuit board designs, supporting documentation, and manufacturing artifacts published by IOTMER. The goal is to provide reproducible hardware definitions and clear contribution paths for collaborators and downstream manufacturers.
