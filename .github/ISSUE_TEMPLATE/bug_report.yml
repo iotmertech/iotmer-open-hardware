@@ -1,0 +1,53 @@
+name: Bug report
+description: Report incorrect documentation, manufacturing issues, or design defects.
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: board
+    attributes:
+      label: Board name
+      description: Select the board this report applies to.
+      options:
+        - smart-dual-power-control
+    validations:
+      required: true
+
+  - type: input
+    id: hardware_version
+    attributes:
+      label: Hardware version
+      description: PCB or release version (e.g., v0.1).
+      placeholder: e.g., v0.1
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Summarize the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Ordered steps or conditions that lead to the issue.
+      placeholder: "1. ...\n2. ..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true

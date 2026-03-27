@@ -1,0 +1,33 @@
+name: Hardware question
+description: Ask about schematics, BOM, manufacturing, or other hardware topics.
+labels: ["question"]
+body:
+  - type: dropdown
+    id: board
+    attributes:
+      label: Board name
+      description: Select the board your question relates to.
+      options:
+        - smart-dual-power-control
+    validations:
+      required: true
+
+  - type: dropdown
+    id: question_type
+    attributes:
+      label: Question type
+      options:
+        - schematic
+        - BOM
+        - manufacturing
+        - other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: State your question with enough context (revision, fabricator, etc.).
+    validations:
+      required: true
